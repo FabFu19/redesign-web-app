@@ -8,7 +8,9 @@ export const Home = () => {
   return (
     <>
       <div className='home-container'>
-        <div  className="bg-cover bg-center w-full h-screen" style={{ backgroundImage: `url(${worldImg})` }}></div>
+        <div  className="bg-cover bg-center w-full h-screen" style={{ backgroundImage: `url(${worldImg})` }}>
+            
+        </div>
       </div>
     </>
   )
