@@ -9,7 +9,8 @@
 }
 .better-world-title{
     font-family: 'Monserrat', sans-serif;
-    font-size: 50px;
+    font-size: 53px;
+    font-weight: 600;
 }
 .better-w-first-tex{
     font-family: 'Monserrat', sans-serif;
@@ -22,4 +23,13 @@
 .metric-sec-tx{
     font-family: 'Monserrat', sans-serif;
     font-size: 15px;
+}
+.we-transform-title {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 600;
+}
+
+.we-trnsf-sec-txt{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 20px;
 }
