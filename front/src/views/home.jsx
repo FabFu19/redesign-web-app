@@ -1,28 +1,33 @@
-import React from 'react'
-import worldImg from '../assets/world.png';
-import '../styles/home.css'
-import { BetterWorld } from '../components/better_world';
+import React, { useRef } from "react";
+import { WorldScrollEffect } from "../components/world_scroll.jsx";
+import { BetterWorld } from "../components/better_world.jsx";
+import { WeTransform } from "../components/we_transform.jsx";
+import { ANewEra } from "../components/a_new_era.jsx";
+import { News } from "../components/news.jsx";
 
 export const Home = () => {
-
+  const betterWorldRef = useRef(null);
+  const weTransformRef = useRef(null);
 
   return (
     <>
-      <section className='home-container bg-cover bg-center w-full min-h-screen'  style={{ backgroundImage: `url(${worldImg})` }}>
-        <div  className="home-text w-full h-screen flex flex-col justify-center items-center">
-            <div className='h-100'>
-                <h1 className='home-principal-title text-white'>A NEW ERA BEGINS</h1>
-            </div>
-            <div className='absolute bottom-10 left-1/2 -translate-x-1/2'>
-                <p className='home-text-scroll text-white'>Scroll to explorer</p>
-            </div>
-        </div>
-        <div className='bg-white w-full h-screen'>
+        <WorldScrollEffect betterWorldRef={betterWorldRef} weTransformRef={weTransformRef} />       
+        <section className="bg-auto bg-no-repeat bg-center w-full min-h-screen">
+            <ANewEra />
+        </section>
+
+        
+
+        <section ref={betterWorldRef} className="bg-white w-full min-h-screen relative">
             <BetterWorld />
-        </div>
-      </section>
+        </section>
+
+        <section ref={weTransformRef} className="bg-white w-full min-h-screen relative">
+            <WeTransform />
+        </section>
+        <section className="bg-white w-full min-h-screen relative">
+            <News />
+        </section>
     </>
-  )
-}
-
-
+  );
+};
