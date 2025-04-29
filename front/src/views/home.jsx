@@ -25,7 +25,7 @@ export const Home = () => {
         <section ref={weTransformRef} className="bg-white w-full min-h-screen relative">
             <WeTransform />
         </section>
-        <section>
+        <section className="bg-white w-full min-h-screen relative">
             <News />
         </section>
     </>

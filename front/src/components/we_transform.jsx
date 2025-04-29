@@ -2,7 +2,7 @@ import React from "react";
 
 export const WeTransform = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center text-center h-full w-full px-6 md:px-20">
+    <div className="relative flex flex-col justify-center items-center text-center h-full w-full px-6 md:px-20 py-16">
       <div className="z-10 max-w-3xl">
         <h1 className="we-transform-title text-3xl md:text-5xl leading-tight mb-6">
           <span className="text-[#0072BC]">WE TRANSFORM</span>{" "}

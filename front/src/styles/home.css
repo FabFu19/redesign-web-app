@@ -33,3 +33,17 @@
     font-family: 'Monserrat', sans-serif;
     font-size: 20px;
 }
+
+.news-text-styles{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 2.25rem;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
