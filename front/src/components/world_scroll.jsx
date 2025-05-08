@@ -1,68 +1,92 @@
 import React, { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
-import { motion, useViewportScroll, useTransform } from "framer-motion";
-import worldImg from "../assets/world.png"; 
+import { motion, useScroll, useTransform } from "framer-motion";
+import worldImg from "../assets/world.png";
 
-export const WorldScrollEffect = ({ betterWorldRef, weTransformRef }) => {
-  const { scrollY } = useViewportScroll();
-  const [sections, setSections] = useState({
+export const WorldScrollEffect = ({
+  aNewEraRef,
+  betterWorldRef,
+  weTransformRef,
+  newsRef,
+  digitalLoveRef,
+}) => {
+  const { scrollY } = useScroll();
+  const [positions, setPositions] = useState({
+    aNewEraTop: 0,
     betterWorldTop: 0,
     weTransformTop: 0,
+    newsTop: 0,
+    digitalLoveTop: 0,
   });
 
   useEffect(() => {
     const updatePositions = () => {
-      if (betterWorldRef.current && weTransformRef.current) {
-        setSections({
-          betterWorldTop: betterWorldRef.current.offsetTop,
-          weTransformTop: weTransformRef.current.offsetTop,
-        });
-      }
+      setPositions({
+        aNewEraTop: aNewEraRef?.current?.offsetTop || 0,
+        betterWorldTop: betterWorldRef?.current?.offsetTop || 0,
+        weTransformTop: weTransformRef?.current?.offsetTop || 0,
+        newsTop: newsRef?.current?.offsetTop || 0,
+        digitalLoveTop: digitalLoveRef?.current?.offsetTop || 0,
+      });
     };
 
     updatePositions();
     window.addEventListener("resize", updatePositions);
     return () => window.removeEventListener("resize", updatePositions);
-  }, [betterWorldRef, weTransformRef]);
+  }, [aNewEraRef, betterWorldRef, weTransformRef, newsRef, digitalLoveRef]);
 
-  const screenHeight = typeof window !== "undefined" ? window.innerHeight : 1080;
+  const {
+    aNewEraTop,
+    betterWorldTop,
+    weTransformTop,
+    newsTop,
+    digitalLoveTop,
+  } = positions;
 
-  const startScroll = 0;
-  const betterWorldStart = sections.betterWorldTop - screenHeight / 1.5;
-  const weTransformStart = sections.weTransformTop - screenHeight / 1.5;
-  const endScroll = sections.weTransformTop + screenHeight / 1.2;
+  const screenHeight = typeof window !== "undefined" ? window.innerHeight : 1440;
 
   const size = useTransform(
     scrollY,
-    [startScroll, betterWorldStart, weTransformStart, endScroll],
-    ["100vw", "60.7757vw", "22vw", "22vw"]
+    [aNewEraTop, betterWorldTop, weTransformTop, newsTop, digitalLoveTop],
+    ["100vw", "50vw", "28vw", "28vw", "80vw"]
   );
-
 
   const top = useTransform(
     scrollY,
-    [startScroll, betterWorldStart, weTransformStart, endScroll],
-    ["0vh", "calc(50vh - 1.3829vw)", "calc(50vh - 0)", "calc(50vh - 12vw)"]
+    [
+      aNewEraTop,
+      betterWorldTop,
+      weTransformTop,
+      weTransformTop + screenHeight / 2,
+      newsTop,
+      digitalLoveTop,
+    ],
+    ["0vh", "30vh", "20vh", "60vh", "80vh", "-130vh"]
   );
 
- 
   const left = useTransform(
     scrollY,
-    [startScroll, betterWorldStart, weTransformStart, endScroll],
-    ["0vw", "32.1075vw", "91.8vw", "78vw"]
+    [
+      aNewEraTop,
+      betterWorldTop,
+      weTransformTop,
+      newsTop - screenHeight / 3,
+      newsTop,
+      digitalLoveTop,
+    ],
+    ["0vw", "45vw", "90vw", "70vw", "-35vw", "18vw"]
   );
-
 
   const rotation = useTransform(
     scrollY,
-    [startScroll, betterWorldStart, weTransformStart, endScroll],
-    ["0deg", "-60deg", "30deg", "30deg"]
+    [aNewEraTop, betterWorldTop, weTransformTop, newsTop, digitalLoveTop],
+    ["0deg", "-45deg", "20deg", "30deg", "-107deg"]
   );
 
   const borderRadius = useTransform(
     scrollY,
-    [startScroll, betterWorldStart],
-    ["0%", "50%"]
+    [aNewEraTop, betterWorldTop],
+    ["0%", "100%"]
   );
 
   return (
@@ -78,8 +102,8 @@ export const WorldScrollEffect = ({ betterWorldRef, weTransformRef }) => {
         top,
         left,
         rotate: rotation,
-        // opacity,
         borderRadius,
+        transform: "translate(-50%, 0)",
       }}
     />
   );
