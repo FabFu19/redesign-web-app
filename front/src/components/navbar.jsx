@@ -7,10 +7,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link, useNavigate } from "react-router-dom";
 
 const navigation = [
-    { name: 'Industrias', href: '#', current: true },
-    { name: 'Servicios', href: '#', current: false },
-    { name: 'Productos', href: '#', current: false },
-    { name: 'Nosotros', href: '#', current: false },
+    { name: 'Industries', href: '#', current: true },
+    { name: 'Services', href: '#', current: false },
+    { name: 'Products', href: '#', current: false },
+    { name: 'About us', href: '#', current: false },
   ]
   
   function classNames(...classes) {
@@ -118,7 +118,7 @@ export const Navbar = () => {
                                 </div>
                             </div>
                             <Link to="/" onClick={handleContact}>
-                                <div className="bg-[#0072BC] rounded-full py-2 px-5">Contactar</div>
+                                <div className="bg-[#0072BC] rounded-full py-2 px-5">Contact</div>
                             </Link>
                             
 
