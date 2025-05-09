@@ -9,6 +9,7 @@ export const WorldScrollEffect = ({
   weTransformRef,
   newsRef,
   digitalLoveRef,
+  onlyWorldRef,
 }) => {
   const { scrollY } = useScroll();
   const [positions, setPositions] = useState({
@@ -17,6 +18,7 @@ export const WorldScrollEffect = ({
     weTransformTop: 0,
     newsTop: 0,
     digitalLoveTop: 0,
+    onlyWorldTop: 0,
   });
 
   useEffect(() => {
@@ -27,13 +29,14 @@ export const WorldScrollEffect = ({
         weTransformTop: weTransformRef?.current?.offsetTop || 0,
         newsTop: newsRef?.current?.offsetTop || 0,
         digitalLoveTop: digitalLoveRef?.current?.offsetTop || 0,
+        onlyWorldTop: onlyWorldRef?.current?.offsetTop || 0,
       });
     };
 
     updatePositions();
     window.addEventListener("resize", updatePositions);
     return () => window.removeEventListener("resize", updatePositions);
-  }, [aNewEraRef, betterWorldRef, weTransformRef, newsRef, digitalLoveRef]);
+  }, [aNewEraRef, betterWorldRef, weTransformRef, newsRef, digitalLoveRef, onlyWorldRef]);
 
   const {
     aNewEraTop,
@@ -41,14 +44,22 @@ export const WorldScrollEffect = ({
     weTransformTop,
     newsTop,
     digitalLoveTop,
+    onlyWorldTop,
   } = positions;
 
   const screenHeight = typeof window !== "undefined" ? window.innerHeight : 1440;
 
   const size = useTransform(
     scrollY,
-    [aNewEraTop, betterWorldTop, weTransformTop, newsTop, digitalLoveTop],
-    ["100vw", "50vw", "28vw", "28vw", "80vw"]
+    [
+      aNewEraTop,
+      betterWorldTop,
+      weTransformTop,
+      newsTop,
+      digitalLoveTop,
+      onlyWorldTop,
+    ],
+    ["100vw", "50vw", "28vw", "28vw", "80vw", "80vw"]
   );
 
   const top = useTransform(
@@ -60,8 +71,9 @@ export const WorldScrollEffect = ({
       weTransformTop + screenHeight / 2,
       newsTop,
       digitalLoveTop,
+      onlyWorldTop,
     ],
-    ["0vh", "30vh", "20vh", "60vh", "80vh", "-130vh"]
+    ["0vh", "30vh", "20vh", "60vh", "80vh", "-130vh","50vh",] 
   );
 
   const left = useTransform(
@@ -73,14 +85,22 @@ export const WorldScrollEffect = ({
       newsTop - screenHeight / 3,
       newsTop,
       digitalLoveTop,
+      onlyWorldTop,
     ],
-    ["0vw", "45vw", "90vw", "70vw", "-35vw", "18vw"]
+    ["0vw", "45vw", "90vw", "70vw", "-35vw", "18vw", "10vw"]
   );
 
   const rotation = useTransform(
     scrollY,
-    [aNewEraTop, betterWorldTop, weTransformTop, newsTop, digitalLoveTop],
-    ["0deg", "-45deg", "20deg", "30deg", "-107deg"]
+    [
+      aNewEraTop,
+      betterWorldTop,
+      weTransformTop,
+      newsTop,
+      digitalLoveTop,
+      onlyWorldTop,
+    ],
+    ["0deg", "-45deg", "20deg", "30deg", "-107deg", "-3.9075deg"]
   );
 
   const borderRadius = useTransform(
