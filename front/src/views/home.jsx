@@ -5,6 +5,7 @@ import { WeTransform } from "../components/we_transform.jsx";
 import { News } from "../components/news.jsx";
 import { DigitalLovers } from "../components/digital_lovers.jsx";
 import { WorldScrollEffect } from "../components/world_scroll.jsx";
+import { WorldSection } from "../components/only-world.jsx";
 
 export const Home = () => {
   const aNewEraRef = useRef(null);
@@ -12,15 +13,17 @@ export const Home = () => {
   const weTransformRef = useRef(null);
   const newsRef = useRef(null);
   const digitalLoversRef = useRef(null);
+  const onlyWorldRef = useRef(null);
 
   return (
-    <main className="relative overflow-x-hidden">
+    <main className="relative overflow-y-hidden">
       <WorldScrollEffect
         newEraRef={aNewEraRef}
         betterWorldRef={betterWorldRef}
         weTransformRef={weTransformRef}
         newsRef={newsRef}
         digitalLoveRef={digitalLoversRef}
+        onlyWorldRef={onlyWorldRef}
       />
 
       <section ref={aNewEraRef} className="relative min-h-screen">
@@ -41,6 +44,10 @@ export const Home = () => {
 
       <section ref={digitalLoversRef} className="relative min-h-screen">
         <DigitalLovers />
+      </section>
+
+      <section ref={onlyWorldRef} className="relative h-[460px] bg-black">
+        <WorldSection />
       </section>
     </main>
   );

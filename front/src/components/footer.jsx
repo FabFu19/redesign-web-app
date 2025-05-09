@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from "react
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#060c2c] text-white px-8 py-10 text-sm">
+    <footer className="relative bg-[#060c2c] text-white px-8 py-10 text-sm z-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8">
      
         <div className="flex flex-col gap-4">
