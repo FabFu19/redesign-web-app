@@ -6,6 +6,7 @@ import { News } from "../components/news.jsx";
 import { DigitalLovers } from "../components/digital_lovers.jsx";
 import { WorldScrollEffect } from "../components/world_scroll.jsx";
 import { WorldSection } from "../components/only-world.jsx";
+import worldImg from "../assets/world.png";
 
 export const Home = () => {
   const aNewEraRef = useRef(null);
@@ -26,7 +27,7 @@ export const Home = () => {
         onlyWorldRef={onlyWorldRef}
       />
 
-      <section ref={aNewEraRef} className="relative min-h-screen">
+      <section ref={aNewEraRef} className="relative min-h-screen z-10" style={({ backgroundImage: `url(${worldImg})` })}>
         <ANewEra />
       </section>
 

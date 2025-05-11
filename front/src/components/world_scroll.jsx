@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useTransform } from "framer-motion";
-import worldImg from "../assets/world.png";
+import worldImg from "../assets/world3.png";
 
 export const WorldScrollEffect = ({
   aNewEraRef,
@@ -49,37 +49,34 @@ export const WorldScrollEffect = ({
 
   const screenHeight = typeof window !== "undefined" ? window.innerHeight : 1440;
 
-  const size = useTransform(
-    scrollY,
-    [
-      aNewEraTop,
-      betterWorldTop,
-      weTransformTop,
-      newsTop,
-      digitalLoveTop,
-      onlyWorldTop,
-    ],
-    ["100vw", "50vw", "28vw", "28vw", "95vw", "80vw"]
-  );
-
+ 
   const top = useTransform(
     scrollY,
     [
-      aNewEraTop,
-      betterWorldTop,
-      weTransformTop,
+      aNewEraTop,                 
+      betterWorldTop - screenHeight / 2, 
+      betterWorldTop,          
+      weTransformTop,             
       weTransformTop + screenHeight / 2,
       newsTop,
       digitalLoveTop,
       onlyWorldTop,
     ],
-    ["0vh", "30vh", "20vh", "60vh", "80vh", "-150vh","50vh",] 
+    [
+      "-120vh",  
+      "-20vh",  
+      "30vh",     
+      "20vh",
+      "60vh",
+      "75vh",
+      "-150vh",
+      "50vh",
+    ]
   );
 
   const left = useTransform(
     scrollY,
     [
-      aNewEraTop,
       betterWorldTop,
       weTransformTop,
       newsTop - screenHeight / 3,
@@ -87,32 +84,25 @@ export const WorldScrollEffect = ({
       digitalLoveTop,
       onlyWorldTop,
     ],
-    ["0vw", "45vw", "90vw", "70vw", "-35vw", "14vw", "10vw"]
+    ["45vw", "90vw", "70vw", "-30vw", "14vw", "10vw"]
+  );
+
+  const size = useTransform(
+    scrollY,
+    [betterWorldTop, weTransformTop, newsTop, digitalLoveTop, onlyWorldTop],
+    ["50vw", "28vw", "28vw", "95vw", "80vw"]
   );
 
   const rotation = useTransform(
     scrollY,
-    [
-      aNewEraTop,
-      betterWorldTop,
-      weTransformTop,
-      newsTop,
-      digitalLoveTop,
-      onlyWorldTop,
-    ],
-    ["0deg", "-45deg", "20deg", "30deg", "-160deg", "-3.9075deg"]
-  );
-
-  const borderRadius = useTransform(
-    scrollY,
-    [aNewEraTop, betterWorldTop],
-    ["0%", "100%"]
+    [betterWorldTop, weTransformTop, newsTop, digitalLoveTop, onlyWorldTop],
+    ["-45deg", "20deg", "30deg", "-160deg", "-3.9075deg"]
   );
 
   return (
     <motion.img
       src={worldImg}
-      alt="World"
+      alt="Planet"
       style={{
         position: "fixed",
         zIndex: 1,
@@ -122,7 +112,8 @@ export const WorldScrollEffect = ({
         top,
         left,
         rotate: rotation,
-        borderRadius,
+        borderRadius: "50%",
+        objectFit: "cover",
         transform: "translate(-50%, 0)",
       }}
     />
