@@ -21,7 +21,7 @@ export const Navbar = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [timeoutId, setTimeoutId] = useState(null);
-  const [isInANewEra, setIsInANewEra] = useState(true); // Logo blanco por defecto
+  const [isInANewEra, setIsInANewEra] = useState(true); 
   const searchRef = useRef();
 
   const location = useLocation();
