@@ -27,7 +27,7 @@ export const Home = () => {
         onlyWorldRef={onlyWorldRef}
       />
 
-      <section ref={aNewEraRef} className="relative min-h-screen z-10" style={({ backgroundImage: `url(${worldImg})` })}>
+      <section ref={aNewEraRef} className="relative min-h-screen z-10" style={({ backgroundImage: `url(${worldImg})` })} id="a-new-era">
         <ANewEra />
       </section>
 
