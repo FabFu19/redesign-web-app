@@ -59,7 +59,7 @@ export const WorldScrollEffect = ({
       digitalLoveTop,
       onlyWorldTop,
     ],
-    ["100vw", "50vw", "28vw", "28vw", "80vw", "80vw"]
+    ["100vw", "50vw", "28vw", "28vw", "95vw", "80vw"]
   );
 
   const top = useTransform(
@@ -73,7 +73,7 @@ export const WorldScrollEffect = ({
       digitalLoveTop,
       onlyWorldTop,
     ],
-    ["0vh", "30vh", "20vh", "60vh", "80vh", "-130vh","50vh",] 
+    ["0vh", "30vh", "20vh", "60vh", "80vh", "-150vh","50vh",] 
   );
 
   const left = useTransform(
@@ -87,7 +87,7 @@ export const WorldScrollEffect = ({
       digitalLoveTop,
       onlyWorldTop,
     ],
-    ["0vw", "45vw", "90vw", "70vw", "-35vw", "18vw", "10vw"]
+    ["0vw", "45vw", "90vw", "70vw", "-35vw", "14vw", "10vw"]
   );
 
   const rotation = useTransform(
@@ -100,7 +100,7 @@ export const WorldScrollEffect = ({
       digitalLoveTop,
       onlyWorldTop,
     ],
-    ["0deg", "-45deg", "20deg", "30deg", "-107deg", "-3.9075deg"]
+    ["0deg", "-45deg", "20deg", "30deg", "-160deg", "-3.9075deg"]
   );
 
   const borderRadius = useTransform(

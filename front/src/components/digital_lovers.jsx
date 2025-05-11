@@ -3,7 +3,7 @@ import React from "react";
 export const DigitalLovers = () => {
 
     return(
-        <div className="relative z-10 flex flex-col justify-center items-center text-center w-full h-full px-6 md:px-20 pt-[200px] pb-16">
+        <div className="relative z-10 flex flex-col justify-center items-center text-center w-full h-full sm:pt-8, px-6 md:px-20 pt-[230px] pb-16">
             <div className="w-full max-w-[900px]">
                 <h1 className="text-black digi-title-style uppercase mb-4">
                     <span className="text-[#0072BC]">TheDigitalLovers</span>,<br />
