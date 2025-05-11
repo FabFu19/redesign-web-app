@@ -26,7 +26,7 @@ export const Home = () => {
         onlyWorldRef={onlyWorldRef}
       />
 
-      <section ref={aNewEraRef} className="relative min-h-screen">
+      <section ref={aNewEraRef} className="relative min-h-screen" id="a-new-era">
         <ANewEra />
       </section>
 
