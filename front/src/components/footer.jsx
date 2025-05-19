@@ -10,11 +10,11 @@ export const Footer = () => {
         <div className="flex flex-col gap-4">
           <img src={footerLog} alt="NTT Data" className="h-6 w-auto" />
           <div className="flex gap-4 text-xl">
-            <FaInstagram />
-            <FaLinkedin />
-            <FaTwitter />
-            <FaFacebook />
-            <FaYoutube />
+            <FaInstagram  className="cursor-pointer"/>
+            <FaLinkedin className="cursor-pointer"/>
+            <FaTwitter className="cursor-pointer"/>
+            <FaFacebook className="cursor-pointer"/>
+            <FaYoutube className="cursor-pointer"/>
           </div>
           <div>
             <p>Español ▼</p>
@@ -23,11 +23,11 @@ export const Footer = () => {
 
   
         <div className="grid grid-cols-2 md:grid-cols-2 gap-y-2 gap-x-8 text-white/90">
-          <a href="#">Industrias</a>
+          <a href="#">Industries</a>
           <a href="#">News</a>
-          <a href="#">Servicios</a>
-          <a href="#">Nosotros</a>
-          <a href="#">Productos</a>
+          <a href="#">Services</a>
+          <a href="#">About us</a>
+          <a href="#">Products</a>
           <a href="#">Careers</a>
         </div>
       </div>
