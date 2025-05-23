@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { ANewEra } from "../components/a_new_era.jsx";
 import { BetterWorld } from "../components/better_world.jsx";
 import { WeTransform } from "../components/we_transform.jsx";
@@ -15,6 +15,29 @@ export const Home = () => {
   const newsRef = useRef(null);
   const digitalLoversRef = useRef(null);
   const onlyWorldRef = useRef(null);
+
+  useEffect(() => {
+    const target = aNewEraRef.current;
+
+  if (!target) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      window.dispatchEvent(new CustomEvent("logo-section-change", {
+        detail: { isInANewEra: entry.isIntersecting }
+      }));
+    },
+    {
+      threshold: 0.6,
+    }
+  );
+
+  observer.observe(target);
+
+  return () => {
+    observer.unobserve(target); 
+  };
+  }, []);
 
   return (
     <main className="relative overflow-y-hidden">
