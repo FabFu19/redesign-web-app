@@ -5,12 +5,12 @@
 .home-text-scroll{
     font-family: 'Monserrat', sans-serif;
     font-size: 30px;
-    opacity: 0.20;
+    opacity: 0.40;
 }
 .better-world-title{
     font-family: 'Monserrat', sans-serif;
     font-size: 53px;
-    font-weight: 600;
+    font-weight: 550;
 }
 .better-w-first-tex{
     font-family: 'Monserrat', sans-serif;
@@ -26,7 +26,7 @@
 }
 .we-transform-title {
     font-family: 'Monserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 550;
     font-size: 53px;
 }
 
@@ -41,7 +41,7 @@
 .news-bigtxt-styles{
     font-family: 'Monserrat', sans-serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 550;
     line-height: 2.25rem;
 }
 .txt-button{
@@ -55,7 +55,7 @@
 .digi-title-style{
     font-family: 'Monserrat', sans-serif;
     font-size: 53px;
-    font-weight: 600;
+    font-weight: 550;
 }
 /* .scrollbar-hide::-webkit-scrollbar {
     display: none;

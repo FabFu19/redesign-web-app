@@ -12,7 +12,7 @@ i18n
     supportedLngs: ["es", "en", "fr", "de", "jp"],
     fallbackLng: "es",
     backend: {
-      loadPath: "/src/i18n/{{lng}}.json"
+      loadPath: "/translation/{{lng}}.json"
     },
     interpolation: {
       escapeValue: false
