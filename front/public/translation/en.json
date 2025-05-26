@@ -37,7 +37,8 @@
       }
     },
     "digitalLovers": {
-      "title": "TheDigitalLovers, a movement of NTT DATA",
+      "titleLine1": "TheDigitalLovers",
+      "titleLine2": "a movement of NTT DATA",
       "description": "At NTT DATA we offer you the opportunity to grow professionally in a flexible, innovative, multicultural and collaborative environment. We have many opportunities that will help you grow in a comprehensive way, in addition to different career plans tailored to you. Check out our job offers in the technology sector and join our TheDigitalLovers community.",
       "cta": "Access our job offers"
     },

@@ -1,15 +1,17 @@
 import React from "react";
 import forbsImg from "../assets/forbes100.jpg";
+import { useTranslation } from "react-i18next";
 
 export const News = () => {
+    const { t } = useTranslation();
     return(
         <div className="relative z-10 max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-[400px_auto] gap-8 py-16 h-full">
             <div className="flex flex-col text-[#00000]">
                 <h2 className="sm:mt-0 md:mt-[50px] mb-6 uppercase news-bigtxt-styles">
-                    <span className="text-[#0072BC]">Forbes</span> names NTT DATA among{" "}
-                    <span className="text-[#0072BC]">the 100 Best Companies </span> to Work For in Spain</h2>
+                    <span className="text-[#0072BC]">{t("news.forbesLine1")}</span>{t("news.forbesLine2")}{" "}
+                    <span className="text-[#0072BC]">{t("news.forbesLine3")} </span> {t("news.forbesLine4")}</h2>
                 <div className="flex flex-col justify-center bg-[#0072BC] text-white rounded-full items-center w-[273px] h-[44px] hover:bg-[#0b649f] hover:cursor-pointer">
-                    <p className="text-center txt-button">Read news</p>
+                    <p className="text-center txt-button">{t("news.cta.readNews")}</p>
                 </div>
             </div>
             <div className="flex flex-col">
@@ -34,7 +36,7 @@ export const News = () => {
                     </div>
                 </div>
                 <div className="flex justify-center flex-row bg-transparent text-[#0072BC] border border-[#0072BC] rounded-full items-center w-[273px] h-[44px] ms-auto hover:bg-[#0072BC] hover:text-white cursor-pointer">
-                    <p className="text-center txt-button">View all</p>
+                    <p className="text-center txt-button">{t("news.cta.viewAll")}</p>
                 </div>
             </div>
         </div>

@@ -37,9 +37,10 @@
         }
     },
     "digitalLovers": {
-      "title": "TheDigitalLovers, un movimiento de NTT DATA",
-      "description": "En NTT DATA te ofrecemos la oportunidad de crecer profesionalmente en un entorno flexible, innovador, multicultural y colaborativo. Tenemos muchas oportunidades que te ayudarán a crecer de manera integral, además de diferentes planes de carrera adaptados a ti. Consulta nuestras ofertas de empleo en el sector tecnológico y únete a nuestra comunidad TheDigitalLovers.",
-      "cta": "Accede a nuestras ofertas de empleo"
+        "titleLine1": "TheDigitalLovers",
+        "titleLine2": "un movimiento de NTT DATA",
+        "description": "En NTT DATA te ofrecemos la oportunidad de crecer profesionalmente en un entorno flexible, innovador, multicultural y colaborativo. Tenemos muchas oportunidades que te ayudarán a crecer de manera integral, además de diferentes planes de carrera adaptados a ti. Consulta nuestras ofertas de empleo en el sector tecnológico y únete a nuestra comunidad TheDigitalLovers.",
+        "cta": "Accede a nuestras ofertas de empleo"
     },
     "footer": {
         "industries": "Industrias",
