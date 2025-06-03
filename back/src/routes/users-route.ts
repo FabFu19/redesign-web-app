@@ -6,11 +6,11 @@ import {
   deleteUserController,
 } from "../controllers/users-c";
 
-const router = Router();
+export const userRoutes = Router();
 
-router.get("/", listUsers);
-router.get("/:id", getUser);
-router.put("/:id", updateUserController);
-router.delete("/:id", deleteUserController);
+userRoutes.get("/", listUsers);
+userRoutes.get("/:id", getUser);
+userRoutes.put("/:id", updateUserController);
+userRoutes.delete("/:id", deleteUserController);
 
-export default router;
+

@@ -7,12 +7,11 @@ import {
   deleteApplicationController,
 } from "../controllers/applications-c";
 
-const router = Router();
+export const applicationRoutes = Router();
 
-router.get("/", listApplications);
-router.get("/:id", getApplication);
-router.post("/", createApplicationController);
-router.put("/:id", updateApplicationController);
-router.delete("/:id", deleteApplicationController);
+applicationRoutes.get("/", listApplications);
+applicationRoutes.get("/:id", getApplication);
+applicationRoutes.post("/", createApplicationController);
+applicationRoutes.put("/:id", updateApplicationController);
+applicationRoutes.delete("/:id", deleteApplicationController);
 
-export default router;

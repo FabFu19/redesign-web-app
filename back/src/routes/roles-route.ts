@@ -7,12 +7,12 @@ import {
   deleteRoleController,
 } from "../controllers/roles-c";
 
-const router = Router();
+export const roleRoutes = Router();
 
-router.get("/", listRoles);
-router.get("/:id", getRole);
-router.post("/", createRoleController);
-router.put("/:id", updateRoleController);
-router.delete("/:id", deleteRoleController);
+roleRoutes.get("/", listRoles);
+roleRoutes.get("/:id", getRole);
+roleRoutes.post("/", createRoleController);
+roleRoutes.put("/:id", updateRoleController);
+roleRoutes.delete("/:id", deleteRoleController);
 
-export default router;
+
