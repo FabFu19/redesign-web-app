@@ -102,6 +102,7 @@ export const Navbar = () => {
                   <div className="flex shrink-0 items-center mr-auto">
                     <img
                       alt="nttlogo"
+                      loading="eager"
                       src={isInANewEra ? logo : logoBlue}
                       className="h-8 w-auto bg-cover"
                     />
