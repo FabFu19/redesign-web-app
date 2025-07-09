@@ -3,9 +3,11 @@ import { login, register } from "../services/auth-s";
 
 
 export const registerUser = async (req: Request, res: Response) => {
+  
   try {
     const result = await register(req.body);
     res.status(201).json(result);
+    console.log("Register endpoint hit");
   } catch (error: any) {
     res.status(400).json({ error: error.message });
   }

@@ -28,6 +28,10 @@ app.use("/api/roles", roleRoutes);
 app.use("/api/offers", offerRoutes);
 app.use("/api/applications", applicationRoutes);
 
+app.use((_req, res, _next) => {
+  res.status(404).json({ message: "Path not found!" });
+});
+
 app.use(errorHandler);
 
 AppDataSource.initialize()
