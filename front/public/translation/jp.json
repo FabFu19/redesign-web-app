@@ -1,0 +1,56 @@
+{
+    "navbar": {
+        "industries": "業界",
+        "services": "サービス",
+        "products": "製品",
+        "about_us": "私たちに関しては",
+        "contact": "お問い合わせ"
+    },
+    "aNewEra": {
+      "title": "新時代の幕開け",
+      "subtitle": "スクロールして探索"
+    },
+    "betterWorld": {
+      "titleLine1": "より良い世界を",
+      "titleLine2": "築く",
+      "description": "戦略的コンサルティングサービスから最先端技術まで、私たちは組織を変革し、産業に革命をもたらし、すべての人にとってより良い社会を形成する体験を開発しています。",
+      "stats": {
+        "countries": "国",
+        "employees": "世界中の従業員数",
+        "years": "歴史と革新の年数"
+      }
+    },
+    "weTransform": {
+      "titleLine1": "私たちは",
+      "titleLine2": "企業を変革し、",
+      "titleLine3": "未来を先取りします",
+      "description": "私たちは東京を拠点とするテクノロジーコンサルティングサービスを専門とする多国籍企業であり、新興技術を通じたイノベーションを続けるために、活動地域を拡大し続けています。人々の生活を向上させる革新的なプロジェクトの開発を目指しています。"
+    },
+    "news": {
+      "forbesLine1": "フォーブス",
+      "forbesLine2": "がNTTデータを",
+      "forbesLine3": "スペインの働きがいのある企業",
+      "forbesLine4": "100社に選出",
+      "cta": {
+        "readNews": "ニュースを読む",
+        "viewAll": "すべて見る"
+      }
+    },
+    "digitalLovers": {
+      "titleLine1": "TheDigitalLovers",
+      "titleLine2": "NTTデータのムーブメント",
+      "description": "NTTデータでは、柔軟で革新的、多文化かつ協調的な環境の中で、プロとして成長できる機会を提供しています。さまざまなキャリアプランや、包括的な成長を支援する多くのチャンスをご用意しています。テクノロジー分野の求人情報をぜひご覧いただき、TheDigitalLoversコミュニティにご参加ください。",
+      "cta": "求人情報を見る"
+    },
+    "footer": {
+        "industries": "業界",
+        "news": "ニュース",
+        "services": "サービス",
+        "about_us": "私たちに関しては",
+        "products": "製品",
+        "careers": "採用情報",
+        "copyright": "© Copyright 2024 NTTデータ スペインおよび関連会社",
+        "back_to_top": "トップへ戻る"
+    }
+  }
+  

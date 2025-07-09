@@ -1,0 +1,56 @@
+{
+    "navbar": {
+        "industries": "Secteurs",
+        "services": "Services",
+        "products": "Produits",
+        "about_us": "À propos de nous",
+        "contact": "Contact"
+    },
+    "aNewEra": {
+      "title": "UNE NOUVELLE ÈRE COMMENCE",
+      "subtitle": "Faites défiler pour explorer"
+    },
+    "betterWorld": {
+      "titleLine1": "CONSTRUIRE UN",
+      "titleLine2": "MONDE MEILLEUR",
+      "description": "Des services de conseil stratégique aux technologies de pointe, nous développons des expériences qui transforment les organisations, révolutionnent les industries et façonnent une société meilleure pour tous.",
+      "stats": {
+        "countries": "Pays",
+        "employees": "Employés dans le monde entier",
+        "years": "Années d’histoire et d’innovation"
+      }
+    },
+    "weTransform": {
+      "titleLine1": "NOUS TRANSFORMONS",
+      "titleLine2": "LES ENTREPRISES",
+      "titleLine3": "EN ANTICIPANT L'AVENIR",
+      "description": "Nous sommes une entreprise multinationale spécialisée dans les services de conseil en technologie basée à Tokyo, qui continue d’ajouter de nouveaux territoires pour innover à travers des technologies émergentes, dans le but de développer des projets innovants qui contribuent à améliorer la vie des gens."
+    },
+    "news": {
+      "forbesLine1": "Forbes",
+      "forbesLine2": "inclut NTT DATA parmi",
+      "forbesLine3": "les 100 meilleures entreprises",
+      "forbesLine4": "où travailler en Espagne",
+      "cta": {
+        "readNews": "Lire les actualités",
+        "viewAll": "Voir tout"
+      }
+    },
+    "digitalLovers": {
+      "titleLine1": "TheDigitalLovers",
+      "titleLine2": "un mouvement de NTT DATA",
+      "description": "Chez NTT DATA, nous vous offrons l’opportunité de vous développer professionnellement dans un environnement flexible, innovant, multiculturel et collaboratif. Nous avons de nombreuses opportunités pour vous permettre de grandir de manière complète, ainsi que différents plans de carrière adaptés à vous. Consultez nos offres d'emploi dans le secteur technologique et rejoignez notre communauté TheDigitalLovers.",
+      "cta": "Accédez à nos offres d'emploi"
+    },
+    "footer": {
+        "industries": "Secteurs",
+        "news": "Actualités",
+        "services": "Services",
+        "about_us": "À propos de nous",
+        "products": "Produits",
+        "careers": "Carrières",
+        "copyright": "© Copyright 2024 NTT DATA Espagne et Affiliés",
+        "back_to_top": "Retour en haut"
+    }
+  }
+  
