@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     host: true,
     port: 5173,
-    allowedHosts: ['d3385a678bed.ngrok-free.app'],
+    allowedHosts: ['24909398711b.ngrok-free.app'],
     // https: {
     //   key: fs.readFileSync('./localhost-key.pem'),
     //   cert: fs.readFileSync('./localhost.pem'),
