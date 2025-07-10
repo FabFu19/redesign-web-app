@@ -103,6 +103,8 @@ export const WorldScrollEffect = ({
     <motion.img
       src={worldImg}
       alt="Planet"
+      loading="eager"
+      decoding="async"
       style={{
         position: "fixed",
         zIndex: 1,
