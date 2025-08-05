@@ -4,7 +4,7 @@ import { Roles } from "../entities/role";
 
 const predRoles = [
   { role: "admin", description: "Administrator with full access" },
-  { role: "hhr", description: "Recruiter with access to manage offers and applications" },
+  { role: "hr", description: "Recruiter with access to manage offers and applications" },
   { role: "candidate", description: "Candidate with access to apply for offers" }
 ];
 

@@ -20,6 +20,9 @@ export const register = async (data: {
   if (existing) throw new Error("Email already in use");
 
   const hashedPassword = await bcrypt.hash(password, 10);
+  
+  const roles = await roleRepo.find();
+  console.log("📌 Roles existentes en la base de datos:", roles.map(r => r.role));
 
   const roleEntity = await roleRepo.findOneBy({ role });
   if (!roleEntity) throw new Error("Invalid role");
