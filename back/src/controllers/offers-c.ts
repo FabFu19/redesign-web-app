@@ -27,6 +27,7 @@ export const getOffer = async (req: Request, res: Response) => {
 
 export const createOfferController = async (req: Request, res: Response) => {
   try {
+    // console.log("💬 Body recibido en createOffer:", req.body);
     const offer = await createOffer(req.body);
     res.status(201).json(offer);
   } catch (err: any) {
